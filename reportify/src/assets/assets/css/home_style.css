@@ -1,0 +1,56 @@
+/* Reset basic margin and padding */
+/* This is for home.html*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the body to ensure full-height scrolling */
+body {
+    font-family: 'Times New Roman', serif, ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+
+.navbar-brand
+{
+   color: #b80a21;
+}
+
+
+
+
+/* Content Section (scrollable area) */
+.content {
+    flex: 1; /* Take up the available space between navbars */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 30px 20px 30px; /* Add space to avoid overlap with navbars */
+    background-color: #f0f2f5;
+}
+
+/* Individual posts */
+.post {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+/* Optional: Scrollbar customization */
+.content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+/*This is for login.html*/
+
